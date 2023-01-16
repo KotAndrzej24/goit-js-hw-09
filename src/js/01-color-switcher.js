@@ -3,7 +3,7 @@ const stopBtn = document.querySelector('[data-stop]');
 const body = document.querySelector('body');
 
 // funkcja startBtn
-
+let timer;
 const startRandom = () => {
   timer = setInterval(randomBackgroundColor, 1000);
   startBtn.disabled = true;
