@@ -20,11 +20,13 @@ startBtn.addEventListener('click', startRandom);
 
 // funkcja stopBtn
 
-stopBtn.addEventListener('click', () => {
+const stopRandom = () => {
   startBtn.disabled = false;
   stopBtn.disabled = true;
-  return clearInterval(timer);
-});
+  clearInterval(timer);
+};
+
+stopBtn.addEventListener('click', stopRandom);
 
 // randomowy kolor
 
