@@ -12,17 +12,13 @@ const startRandom = () => {
   stopBtn.disabled = false;
 };
 
-const randomBackgroundColor = () => {
-  body.style.backgroundColor = getRandomHexColor();
-};
-
 startBtn.addEventListener('click', startRandom);
 
 // funkcja stopBtn
 
 const stopRandom = () => {
   startBtn.disabled = false;
-  stopBtn.disabled = true;
+  // stopBtn.disabled = true;
   clearInterval(timer);
 };
 
@@ -30,6 +26,9 @@ stopBtn.addEventListener('click', stopRandom);
 
 // randomowy kolor
 
+const randomBackgroundColor = () => {
+  body.style.backgroundColor = getRandomHexColor();
+};
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
