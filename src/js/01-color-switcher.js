@@ -2,6 +2,8 @@ const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 const body = document.querySelector('body');
 
+stopBtn.disabled = true;
+
 // funkcja startBtn
 let timer;
 const startRandom = () => {
